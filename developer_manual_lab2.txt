@@ -1,0 +1,32 @@
+Developer Manual
+
+Content :-
+This is essentially a form for taking marks of students opting for  DBMS as input .
+How input is handled?
+--> using HTML form and basic styling is used to generate a form which will serve as a platform for taking input.
+  <input type=" " name=" " value=" ">
+---> Open phpmyadmin and create a table correspondingly to store entries provided by the user using mysql create DATABASE <database_name> and
+CREATE TABLE <table_name> syntax
+--> connect the website to that database using approriate 
+1.> SERVERNAME
+2.> USERNAME
+3.> PASSWORD
+4.> DBNAME
+    new mysqli(servername,username,password,dbname) is used for creating connection .
+
+
+Data from form is passed to server via POST(SUPERGLOBALS) method as to ensure security. 
+These data is inserted into tables in database via simple sql insert query.
+  INSERT INTO <table name>(attr1,attr2,.......,)
+    VALUES('','','','',...);
+This is assigned to a variable in php output file , which is further user in query function as an argument.
+
+
+for VALIDATION PART 
+  isset, filter , empty, preg_match these can be used to check validation part.
+  check can be used for checking constraint that achieved marks can never be higher than total marks
+  condition checking used to check if particular has failed or passed
+  empty is used for checking if student has given that particular exam or not.
+
+
+  

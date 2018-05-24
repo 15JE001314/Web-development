@@ -1,0 +1,23 @@
+User manual
+/*
+  Simple exam result or marks handler using php and mysql
+*/
+
+1. open marksdetails page
+2. Enter all the specific details as asked 
+  1-> Student id which will serve as the primary key of this relational schema
+  2-> Enter marks for test1 , test2 , mid sem and end sem marks
+ 3-> After clicking submit button you would be able to see your each test result . It will also tell you if you passed overall or not
+4-> If absent in any of tests just simply skip 0 will be entered to database corresponding to your record.
+
+Passing marks scheme is explained below :-
+for test1 : marks should be out of 15 and if your score is less than 35 % of total marks in that subject ,
+then you are considered fail in that particular test
+for test2 : marks should be out of 15 and if your score is less than 35 % of total marks in that subject ,
+then you are considered fail in that particular test
+for mid sem : marks should be out of 20 and if your score is less than 35 % of total marks in that subject ,
+then you are considered fail in that particular test
+for end sem : marks should be out of 50 and if your score is less than 35 % of total marks in that subject ,
+then you are considered fail in that particular test
+
+Overall you would be considered pass if your overall score is atleast 50% of total marks of all tests taken into consideration.
